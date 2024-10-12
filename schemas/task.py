@@ -1,11 +1,20 @@
 from pydantic import BaseModel
+from typing import List
 
 
-class DocumentIn(BaseModel):
+class TaskCreate(BaseModel):
     title: str
-    content: str
+    description: str
 
-class DocumentOut(BaseModel):
+class Task(BaseModel):
     id: int
     title: str
-    content: str
+    description: str
+
+class TaskSearch(BaseModel):
+    id: int         
+    fieldName: str   
+    fieldContent: str
+
+class TaskSearchResponse(BaseModel):
+    results: List[TaskSearch]

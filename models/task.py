@@ -1,4 +1,4 @@
-from fastapi import Column, Integer, String
+from sqlalchemy import Column, Integer, String
 from db import Base
 
 class Tasks(Base):
