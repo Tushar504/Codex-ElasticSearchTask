@@ -60,3 +60,6 @@ This project is a FastAPI application that connects to PostgreSQL and Elasticsea
 3. **Build and run the services**:
    ```bash
    docker-compose up --build
+4. **Open FastAPI Swagger UI**:
+   `On browser visit the address http://localhost:8000/docs`
+   
